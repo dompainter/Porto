@@ -12,10 +12,8 @@
   line-height: 24px;
   text-align: center;
   z-index: 2;
-  border-bottom: 1px solid grey;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .Navigation
@@ -25,7 +23,6 @@
   
 .NavigationLinks {
   display: flex;
-  justify-content: center;
   height:50px;
 }
 
@@ -39,3 +36,10 @@
   padding: 10px 15px;
 }
 
+/*
+  PROJECTS
+*/
+
+.ProjectImg {
+  width: 80px;
+}

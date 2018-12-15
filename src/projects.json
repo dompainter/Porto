@@ -1,0 +1,26 @@
+[
+  {
+    "name": "The Australian",
+    "logoSmall": "the-australian.png",
+    "logoBig": "the-australian-big",
+    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio."
+  },
+  {
+    "name": "Northampton Saints",
+    "logoSmall": "saints.png",
+    "logoBig": "the-australian-big",
+    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio."
+  },
+  {
+    "name": "Leicester Tigers",
+    "logoSmall": "tigers.png",
+    "logoBig": "the-australian-big",
+    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio."
+  },
+  {
+    "name": "Riot Games",
+    "logoSmall": "riot.png",
+    "logoBig": "the-australian-big",
+    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio."
+  }
+]

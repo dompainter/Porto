@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 import './App.css'
 import Navigation from './components/navigation/Navigation'
 import Hero from './components/hero/Hero'
-import ProjectList from './components/project-list/ProjectList'
-import ProjectDetail from './components/project-detail/ProjectDetail'
+import ProjectsContainer from './components/projects/ProjectsContainer'
 import Footer from './components/footer/Footer'
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import projects from './projects.json'
 
 class App extends Component {
   render() {
@@ -23,18 +23,11 @@ class App extends Component {
             <Hero />
           </Col>
         </Row>
-        <Row>
-          <Col xs={12} md={4}>
-            <ProjectList />
-          </Col>
-          <Col xs={12} md={8}>
-            <ProjectDetail />
-          </Col>
+        <Row center="md">
+          <ProjectsContainer projects={projects} />
         </Row>
         <Row>
-          <Col xs={12}>
-            <Footer />
-          </Col>
+          <Footer />
         </Row>
       </Grid>
     )
