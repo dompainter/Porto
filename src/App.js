@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Grid className="App" fluid>
-        <Row>
+        <Row className="row--no-padding">
           <Col xs={1} className="NavigationLogo">
             <a href='/'>
               <img src={Logo} alt="logo" />
@@ -23,9 +23,7 @@ class App extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={12}>
-            <Hero />
-          </Col>
+          <Hero />
         </Row>
         <Row center="md">
           <ProjectsContainer projects={projects} />

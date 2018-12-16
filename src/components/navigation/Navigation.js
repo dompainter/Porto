@@ -1,6 +1,5 @@
 import React from 'react'
 import NavigationLink from './NavigationLink'
-import { Col } from 'react-flexbox-grid'
 
 const Navigation = (props) => {
   const navItems = [ {

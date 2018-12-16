@@ -1,17 +1,18 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import AustralianLogo from '../../../images/the-australian.png'
-import SaintsLogo from '../../../images/saints.png'
-import TigersLogo from '../../../images/tigers.png'
+import TigersSvg from '../../../images/tigers.svg'
 import RiotLogo from '../../../images/riot-logo.png'
-// import MiniLogo from '../../../images/mini.png'
+import SaintsSvg from '../../../images/saints.svg'
+import MiniLogo from '../../../images/mini.png'
 
 const ProjectList = ({ projects, handleProjectClick }) => {
   const logos = {
     'The Australian': AustralianLogo,
-    'Northampton Saints': SaintsLogo,
-    'Leicester Tigers': TigersLogo,
-    'Riot Games': RiotLogo
+    'Northampton Saints': SaintsSvg,
+    'Leicester Tigers': TigersSvg,
+    'Riot Games': RiotLogo,
+    'Mini': MiniLogo
   }
   
   return (
