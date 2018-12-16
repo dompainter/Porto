@@ -14,7 +14,6 @@ const ProjectList = ({ projects, handleProjectClick }) => {
     'Riot Games': RiotLogo
   }
   
-  console.log("​ProjectList -> projects", projects)
   return (
     <Row className="ProjectList">
       { projects.map((project, i) => (

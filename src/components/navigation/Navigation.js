@@ -1,6 +1,7 @@
 import React from 'react'
 import NavigationLink from './NavigationLink'
 import { Col } from 'react-flexbox-grid'
+import Logo from '../../images/porto-logo.png'
 
 const Navigation = (props) => {
   const navItems = [ {
@@ -19,7 +20,7 @@ const Navigation = (props) => {
       <Col xs={6}>
         <div className="NavigationLinks">
           <a href='/'>
-            <img src="https://images.unsplash.com/photo-1518655061710-5ccf392c275a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="logo" />
+            <img src={Logo} alt="logo" />
           </a>
           {navItems.map((item, i) => (
             <NavigationLink item={item} key={i} />
