@@ -1,44 +1,62 @@
+html {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: -webkit-linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background: -moz-linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background: -ms-linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background: -o-linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
 .App {
-  display: block
+  display: block;
+  font-family: 'Staatliches', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black
 }
 
 /*
   NAVIGATION
 */
 
-.Navigation {
-  background-color: #FFF;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  z-index: 2;
-  position: sticky;
-  top: 0;
-}
-
-.Navigation
+.NavigationLogo 
   img {
     max-height: 50px;
+    margin: 20px 20px
   }
-  
+
 .NavigationLinks {
   display: flex;
-  height:50px;
+  height: 100%;
 }
 
 .NavigationLink {
-  height: 100%;
-  text-align: center;
-  position: relative;
-  font-size: 16px;
-  line-height: 50px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 10px 15px;
+  align-items: center;
+  display: flex;
 }
 
 /*
   PROJECTS
 */
+
+.ProjectHeading {
+  font-size: 30pt;
+}
+
+.ProjectDetail {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
 
 .ProjectImg {
   width: 80px;
@@ -50,4 +68,22 @@
 
 .ProjectList {
   align-items: center;
+}
+
+.ProjectCircle {
+  display: block;
+  color: #66cbff
+}
+
+/*
+  FOOTER
+*/
+
+.Footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
 }

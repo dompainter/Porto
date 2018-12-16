@@ -3,8 +3,8 @@ import React, { Fragment } from 'react'
 const ProjectDetail = ({ activeProject = {} }) => {
   return (
     <Fragment>
-      {activeProject.name}
-      {activeProject.detail}
+      <h2 className="ProjectHeading">{activeProject.name}</h2>
+      <p className="ProjectDetail">{activeProject.detail}</p>
     </Fragment>
   )
 }

@@ -20,7 +20,11 @@ const ProjectList = ({ projects, handleProjectClick }) => {
           <Col key={i} xs={12} md={6} center="md">
             <div onClick={e => handleProjectClick(project)}>
               <img className="ProjectImg" src={logos[project.name]} alt={project.name} />
-              {project.active && <span>ACTIVE</span>}
+              {project.active &&
+                <span className="ProjectCircle">
+                  <i className="fas fa-circle"></i>
+                </span>
+              }
             </div>
           </Col>
       )
