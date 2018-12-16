@@ -1,17 +1,48 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Component } from 'react'
 import ProjectList from './project-list/ProjectList'
 import ProjectDetail from './project-detail/ProjectDetail'
 import { Col } from 'react-flexbox-grid'
 
-const ProjectsContainer = ({ projects }) => (
-  <Fragment>
-    <Col xs={12} md={4}>
-      <ProjectList projects={projects} />
-    </Col>
-    <Col xs={12} md={8}>
-      <ProjectDetail projects={projects} activeProject={projects[0]} />
-    </Col>
-  </Fragment>
-)
+class ProjectsContainer extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      activeProject: props.projects[0],
+      projects: props.projects
+    }
+
+    this.handleProjectClick = this.handleProjectClick.bind(this)
+  }
+
+  handleProjectClick (project) {
+    const newProjects = this.state.projects.map(proj => {
+      if (project.name === proj.name) {
+        proj.active = true
+      } else {
+        proj.active = false
+      }
+      return proj
+    })
+
+    this.setState(() => ({
+      activeProject: project,
+      projects: newProjects
+    }))
+  }
+
+  render () {
+    return (
+      <Fragment>
+        <Col xs={12} md={4}>
+          <ProjectList projects={this.state.projects} activeProject={this.state.active} handleProjectClick={this.handleProjectClick} />
+        </Col>
+        <Col xs={12} md={8}>
+          <ProjectDetail activeProject={this.state.activeProject} />
+        </Col>
+      </Fragment>
+    )
+  }
+}
 
 export default ProjectsContainer

@@ -43,3 +43,11 @@
 .ProjectImg {
   width: 80px;
 }
+
+.ProjectImgActive {
+  border: 5px solid red
+}
+
+.ProjectList {
+  align-items: center;
+}
