@@ -16,10 +16,10 @@ const ProjectList = ({ projects, handleProjectClick }) => {
   }
   
   return (
-    <Row className="ProjectList">
+    <Row className="ProjectList row--padding-top-small">
       { projects.map((project, i) => (
           <Col key={i} xs={12} md={6} center="md">
-            <div onClick={e => handleProjectClick(project)}>
+            <div className="ProjectListItem" onClick={e => handleProjectClick(project)}>
               <img className="ProjectImg" src={logos[project.name]} alt={project.name} />
               {project.active &&
                 <span className="ProjectCircle">

@@ -3,28 +3,28 @@
     "name": "Northampton Saints",
     "logoSmall": "saints.png",
     "logoBig": "the-australian-big",
-    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio.",
-    "active": false
+    "detail": "<p>Atque nibh id nesciunt fuga eros error laboriosam earum maecenas? Litora congue architecto architecto quisque.</p><p>Labore mi id repudiandae, eveniet tellus lectus praesent hymenaeos suspendisse? Aliqua, deleniti! Tincidunt felis aliquip.</p><p>Delectus tellus fuga porttitor vero aliquam tortor quis, eiusmod dui nec laoreet illo ridiculus adipiscing.</p>",
+    "active": true
   },
   {
     "name": "Leicester Tigers",
     "logoSmall": "tigers.png",
     "logoBig": "the-australian-big",
-    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio.",
+    "detail": "<p>Deleniti minima ridiculus quas quis natus tempus cupiditate. Ad! Eget nisl sed atque quibusdam? Curabitur saepe ullamco irure dolores potenti.</p><p>Class imperdiet elit tincidunt eiusmod exercitation? Similique feugiat. Iaculis, commodo, wisi quas? Laoreet magnis eligendi eiusmod, soluta lacus, eaque congue.</p><p>Sit libero delectus inventore luctus magnam, necessitatibus, totam tristique necessitatibus animi facilis faucibus necessitatibus sed iusto vitae doloremque neque eum.</p>",
     "active": false
   },
   {
     "name": "The Australian",
     "logoSmall": "the-australian.png",
     "logoBig": "the-australian-big",
-    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio.",
-    "active": true
+    "detail": "<p>Morbi assumenda cillum voluptas wisi ullam, tenetur consequatur? Doloremque asperiores veritatis quas pulvinar illum tristique.</p><p>Porro penatibus diam perferendis voluptates accusamus metus, nisi perferendis. Earum eu ab, porttitor libero! Error.</p>",
+    "active": false
   },
   {
     "name": "Riot Games",
     "logoSmall": "riot.png",
     "logoBig": "the-australian-big",
-    "detail": "Laudantium soluta officia ligula omnis duis tellus vivamus impedit, ducimus fugit viverra, corporis aliquam. Hendrerit excepteur molestie odit, donec. Optio.",
+    "detail": "<p>Praesentium doloribus? Necessitatibus tempor, irure tempus perferendis convallis tincidunt optio.</p><p>Est nisi erat orci nihil parturient repudiandae fames eius viverra.</p>",
     "active": false
   }
 ]

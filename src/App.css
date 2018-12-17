@@ -1,4 +1,4 @@
-html {
+body {
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,12 +22,16 @@ a {
   color: black
 }
 
-.row {
+.row--padding-bottom {
   padding-bottom: 60px;
 }
 
-.row--no-padding {
-  padding-bottom: 0px
+.row--padding-bottom-small {
+  padding-bottom: 30px;
+}
+
+.row--padding-top-small {
+  padding-top: 30px
 }
 
 
@@ -35,23 +39,25 @@ a {
   NAVIGATION
 */
 
+.NavigationLogo {
+  margin: 10px 0px 10px 0px
+}
+
 .NavigationLogo 
   img {
     max-height: 50px;
-    margin: 20px 20px
   }
 
 .NavigationLinks {
   display: flex;
   height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .NavigationLink {
   font-size: 20px;
   text-transform: uppercase;
-  padding: 10px 15px;
-  align-items: center;
-  display: flex;
 }
 
 /*
@@ -84,6 +90,7 @@ a {
 .ProjectDetail {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
+  text-align: left;
 }
 
 .ProjectImg {
@@ -99,19 +106,25 @@ a {
 }
 
 .ProjectCircle {
-  display: block;
-  color: #66cbff
+  color: #000000;
+  font-size: 10px;
+}
+
+.ProjectListItem {
+  height: 135px;
+  display: grid;
+  justify-content: center;
 }
 
 /*
   FOOTER
 */
 
-.Footer {
-  /* position: absolute; */
-  /* right: 0; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* padding: 1rem; */
-  text-align: center;
+.Footer
+  a {
+    font-size: 30px;
+  }
+
+.Emoji {
+  font-size:40px;
 }

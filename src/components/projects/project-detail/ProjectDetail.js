@@ -4,7 +4,7 @@ const ProjectDetail = ({ activeProject = {} }) => {
   return (
     <Fragment>
       <h2 className="ProjectHeading">{activeProject.name}</h2>
-      <p className="ProjectDetail">{activeProject.detail}</p>
+      <div className="ProjectDetail" dangerouslySetInnerHTML={{__html: activeProject.detail }} />
     </Fragment>
   )
 }

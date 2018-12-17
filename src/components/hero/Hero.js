@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import heroImage from '../../images/hero2.png'
-import { Row, Col } from 'react-flexbox-grid'
+import { Col } from 'react-flexbox-grid'
 
 const Hero = (props) => (
   <Fragment>

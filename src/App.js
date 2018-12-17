@@ -6,29 +6,29 @@ import Hero from './components/hero/Hero'
 import ProjectsContainer from './components/projects/ProjectsContainer'
 import Footer from './components/footer/Footer'
 import projects from './projects.json'
-import Logo from './images/porto-logo.png'
+import Logo from './images/logo3.png'
 
 class App extends Component {
   render() {
     return (
       <Grid className="App" fluid>
         <Row className="row--no-padding">
-          <Col xs={1} className="NavigationLogo">
+          <Col xs={2} className="NavigationLogo">
             <a href='/'>
               <img src={Logo} alt="logo" />
             </a>
           </Col>
-          <Col xs={4}>
+          <Col xs={3}>
             <Navigation />
           </Col>
         </Row>
-        <Row>
+        <Row className="row--padding-bottom">
           <Hero />
         </Row>
-        <Row center="md">
+        <Row className="row--padding-bottom" id="projects" center="md">
           <ProjectsContainer projects={projects} />
         </Row>
-        <Row>
+        <Row className="row--padding-bottom">
           <Footer />
         </Row>
       </Grid>
