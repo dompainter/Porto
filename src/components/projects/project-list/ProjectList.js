@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 import { Row, Col } from 'react-flexbox-grid'
 import AustralianLogo from '../../../images/the-australian.png'
 import TigersSvg from '../../../images/tigers.svg'
@@ -14,18 +15,21 @@ const ProjectList = ({ projects, handleProjectClick }) => {
     'Riot Games': RiotLogo,
     'Mini': MiniLogo
   }
+
+  const firstProject = projects[0]
+  const otherProjects = projects.slice(1)
   
   return (
-    <Row className="ProjectList row--padding-top-small">
-      { projects.map((project, i) => (
+    <Row className="ProjectList">
+      <Col xs={12}>
+        <div className="ProjectListItem" onClick={e => handleProjectClick(firstProject)}>
+          <img className={classNames('ProjectImgFirst', { 'ProjectImgActive': firstProject.active })} src={logos[firstProject.name]} alt={firstProject.name} />
+        </div>
+      </Col>
+      { otherProjects.map((project, i) => (
           <Col key={i} xs={12} md={6} center="md">
             <div className="ProjectListItem" onClick={e => handleProjectClick(project)}>
-              <img className="ProjectImg" src={logos[project.name]} alt={project.name} />
-              {project.active &&
-                <span className="ProjectCircle">
-                  <i className="fas fa-circle"></i>
-                </span>
-              }
+              <img className={classNames('ProjectImg', { 'ProjectImgActive': project.active })} src={logos[project.name]} alt={project.name} />
             </div>
           </Col>
       )

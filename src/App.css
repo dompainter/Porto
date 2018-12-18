@@ -45,7 +45,8 @@ a {
 
 .NavigationLogo 
   img {
-    max-height: 50px;
+    max-height: 80px;
+    padding-left: 35px;
   }
 
 .NavigationLinks {
@@ -56,7 +57,7 @@ a {
 }
 
 .NavigationLink {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -85,6 +86,7 @@ a {
 
 .ProjectHeading {
   font-size: 30pt;
+  margin-top: 0pt;
 }
 
 .ProjectDetail {
@@ -95,10 +97,17 @@ a {
 
 .ProjectImg {
   width: 80px;
+  opacity: 0.3;
+}
+
+.ProjectImgFirst {
+  width: 300px;
+  padding-top: 50px;
+  opacity: 0.5;
 }
 
 .ProjectImgActive {
-  border: 5px solid red
+  opacity: 1;
 }
 
 .ProjectList {
