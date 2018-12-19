@@ -16,29 +16,32 @@ const Footer = (props) => {
         <Col xs>
           <Row className="row--padding-bottom-small" xs={12}>
             <Col xs>
-              <a href={socialMedias.linkedIn} target="_blank" rel="noopener noreferrer">
+              <a className="SocialIcon" href={socialMedias.linkedIn} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </Col>
             <Col xs>
-              <a href={socialMedias.facebook} target="_blank" rel="noopener noreferrer">
+              <a className="SocialIcon" href={socialMedias.facebook} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>
               </a>
             </Col>
             <Col xs>
-              <a href={socialMedias.instagram} target="_blank" rel="noopener noreferrer">
+              <a className="SocialIcon" href={socialMedias.instagram} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
             </Col>
             <Col xs>
-              <a href={socialMedias.twitter} target="_blank" rel="noopener noreferrer">
+              <a className="SocialIcon" href={socialMedias.twitter} target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
             </Col>
           </Row>
           <Row>
-            <Col xs>
-              <Emoji text=":wave:" onlyEmojiClassName="Emoji" />
+            <Col className="FooterGreeting" xs>
+                <a className="FunkyHello" href="mailto:dominickpainter@gmail.com">
+                  <span className="FunkyText">Say Hello!</span>
+                  <Emoji text=":wave:" onlyEmojiClassName="Emoji" />
+                </a>
             </Col>
           </Row>
         </Col>

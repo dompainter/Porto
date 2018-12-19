@@ -7,8 +7,13 @@ import ProjectsContainer from './components/projects/ProjectsContainer'
 import Footer from './components/footer/Footer'
 import projects from './projects.json'
 import Logo from './images/logo3.png'
+import About from './components/about/About'
 
 class App extends Component {
+  componentDidMount () {
+    window.funkyHello()
+  }
+
   render() {
     return (
       <Grid className="App" fluid>
@@ -24,6 +29,9 @@ class App extends Component {
         </Row>
         <Row className="row--padding-bottom">
           <Hero />
+        </Row>
+        <Row className="row--padding-bottom">
+          <About />
         </Row>
         <Row className="row--padding-bottom" id="projects" center="md">
           <ProjectsContainer projects={projects} />

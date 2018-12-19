@@ -34,10 +34,10 @@ class ProjectsContainer extends Component {
   render () {
     return (
       <Fragment>
-        <Col xs={12} md={4}>
+        <Col xs={12} md={3}>
           <ProjectList projects={this.state.projects} activeProject={this.state.active} handleProjectClick={this.handleProjectClick} />
         </Col>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={9}>
           <ProjectDetail activeProject={this.state.activeProject} />
         </Col>
       </Fragment>
