@@ -5,7 +5,8 @@ import { Col } from 'react-flexbox-grid'
 const Hero = (props) => (
   <Fragment>
     <Col className="HeroText" xs={12} md={2}>
-      Dominick Painter
+      <span className="NameOne">Dominick</span>
+      <span className="NameTwo">Painter</span>
     </Col>
     <Col xs={12} md={9} className="HeroImage">
       <img src={heroImage} alt="hero" />
